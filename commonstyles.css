@@ -5,18 +5,111 @@ body{
     color:rgb(77, 80, 83);
 }
 
-
-  .navbar {
-        display: flex;
-        justify-content: space-evenly;
-        align-content: center;
-        line-height: 45px;
-        background-color: white;
-        position: sticky;
-        top: 0;
-        box-shadow: 1px 2px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 8%);
+#encode-button,
+#decode-button,
+#start-button,
+#convert-button {
+    background-color: #276ef1;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
         
-  } 
+}
+
+#reset-button {
+  background-color: #f12e27;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  
+}
+
+#pause-button {
+  background-color: #41b10e;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  
+}
+
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  min-width: 180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 40px;
+  color:#555555;
+  background-color: #f6f8fa;
+  box-shadow: 1px 2px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 8%);
+}
+
+.dropdown-content{
+  display: none;
+}
+
+.dropdown-nav:hover .dropdown-content{
+      display: block;
+      position: absolute;
+} 
+
+.dropdown-nav:hover{
+  cursor: pointer;
+  color:#388bfd;
+}
+
+.other-websites a {
+  color:rgb(77, 80, 83);
+  text-decoration: none;
+}
+
+.other-websites a:hover{
+  color:#388bfd;
+  text-decoration:underline;
+}
+
+.navbar {
+  /*added flex wrap..change in all*/
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
+      line-height: 45px;
+      background-color: white;
+      position: sticky;
+      top: 0;
+      box-shadow: 1px 2px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 8%);
+      
+}
+
+.input-output{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:200px;
+}
+
+.dropdown-arrow{
+  height: 10px;
+  width: 10px
+}
 
   .main-content{
   display:grid;
