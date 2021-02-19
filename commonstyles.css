@@ -103,7 +103,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top:200px;
+  min-height: calc(100vh - 65px);
 }
 
 .dropdown-arrow{
