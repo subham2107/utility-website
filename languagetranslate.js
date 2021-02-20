@@ -22,4 +22,10 @@ translateButton.addEventListener('click',()=>{
       });
 });
 
-  
+/*let input=document.querySelector('#input');
+let output=document.querySelector('#output');
+
+fetch('https://api.mymemory.translated.net/get?q=Hello,%20my%20name%20is%20Gaurav!&langpair=en%7Chi')
+  .then(response => response.json())
+  .then(json => {output.value=json.responseData.translatedText});
+  */

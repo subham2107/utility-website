@@ -1,7 +1,7 @@
-let ip=document.querySelector('#ip');
+let ip=document.querySelector('#ipAddress');
 fetch('https://api.ipify.org/?format=json')
-  .then(response => response.text())
-  .then(data => ip.innerHTML=data.substring(7,21));
+  .then(response => response.json())
+  .then(json => ipAddress.innerHTML=json.ip);
 
 /*
 const functionWithPromise = () => {
