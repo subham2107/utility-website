@@ -31,6 +31,7 @@ ct%2==0?startButton.value='Start':startButton.value='Pause';
 resetButton.addEventListener('click',()=>{
   
   startButton.value='Start';
+  ct=0;
   timer.value=10;
   clearInterval(timerId);
 
