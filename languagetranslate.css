@@ -101,7 +101,7 @@ text-decoration:underline;
 }
 
 .input-output{
-display:flex;
+display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -137,40 +137,10 @@ width: 10px
   
 }
 
-.card{
-  text-align: center;
-  max-height:230px;
-  max-width:230px;
-  min-height:230px;
-  min-width:230px;
-  border-radius:5px;
-}
-
-.img-wrapper{
-  height:180px;
-  width:180px;
-  margin:0 auto;
-}
-
-.card-img{
- margin-top:10px;
- height:170px;
- width:170px;
-}
-
-.card-img:hover{
-height:180px;
-width:180px
-}
 
 a{
  text-decoration: none;
  color:rgb(77, 80, 83);
-}
-
-.card a:hover{
-
-text-decoration:none; 
 }
 
 
