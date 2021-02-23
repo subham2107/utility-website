@@ -16,8 +16,11 @@ startButton.addEventListener('click',()=>{
     if(timer.value==='0')
    {
     clearInterval(timerId);
+    startButton.value='Start';
+
    }
   },1000);
+  
 }else{
   clearInterval(timerId);
 }

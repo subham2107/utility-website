@@ -7,7 +7,6 @@ body{
 
 #encode-button,
 #decode-button,
-#start-button,
 #convert-button,
 #translate-button {
     background-color: #276ef1;
@@ -35,7 +34,7 @@ body{
   
 }
 
-#pause-button {
+#start-button {
   background-color: #41b10e;
   color: #fff;
   font-size: 16px;

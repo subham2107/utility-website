@@ -1,12 +1,7 @@
-let input=document.querySelector('#input');
-let output=document.querySelector('#output');
-let translateButton=document.querySelector('#translate-button');
+const input=document.querySelector('#input');
+const output=document.querySelector('#output');
+const translateButton=document.querySelector('#translate-button');
 const resetButton=document.querySelector('#reset-button');
-
-resetButton.addEventListener('click',()=>{
-  input.value="";
-  output.value="";
-  });
 
 translateButton.addEventListener('click',()=>{
   const url = new URL('https://api.mymemory.translated.net/get');
@@ -22,10 +17,7 @@ translateButton.addEventListener('click',()=>{
       });
 });
 
-/*let input=document.querySelector('#input');
-let output=document.querySelector('#output');
-
-fetch('https://api.mymemory.translated.net/get?q=Hello,%20my%20name%20is%20Gaurav!&langpair=en%7Chi')
-  .then(response => response.json())
-  .then(json => {output.value=json.responseData.translatedText});
-  */
+resetButton.addEventListener('click',()=>{
+  input.value="";
+  output.value="";
+  });
