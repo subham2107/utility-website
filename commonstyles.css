@@ -44,6 +44,8 @@ body{
   cursor: pointer;
   border: none;
   font-family: inherit;
+  min-width: 100px;
+  max-width: 100px;
   
 }
 

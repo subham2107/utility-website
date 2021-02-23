@@ -2,11 +2,11 @@ const startButton=document.querySelector('#start-button');
 const resetButton=document.querySelector('#reset-button');
 const timer=document.querySelector('#timer');
 
-let timerId;let ct=0;
+let timerId;
 
 startButton.addEventListener('click',()=>{
   
-  if(startButton.value=='Start'){
+  if(startButton.value==='Start'){
   timerId=setInterval(()=>{
     if(timer.value==='0')
    {
@@ -25,16 +25,17 @@ startButton.addEventListener('click',()=>{
   clearInterval(timerId);
 }
 
-ct++;
-ct%2==0?startButton.value='Start':startButton.value='Pause';
+if(startButton.value==='Start')
+ startButton.value='Pause';
 
+ else if(startButton.value==='Pause')
+ startButton.value='Start';
 });
 
 
 resetButton.addEventListener('click',()=>{
   
   startButton.value='Start';
-  ct=0;
   timer.value=10;
   clearInterval(timerId);
 
