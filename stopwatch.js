@@ -25,8 +25,14 @@ startButton.addEventListener('click',()=>{
    time++;
    
    stopwatchSecond.value=(time)%60;
-   stopwatchMinute.value=parseInt(time/60);
+   stopwatchMinute.value=parseInt(time/60)%60;
    stopwatchHour.value=parseInt(time/3600);
+
+   /*
+   stopwatchSecond.value=(time)%60;
+   stopwatchMinute.value=(time/60)%60;
+   stopwatchHour.value=(time/3600);
+   */
    
    if(stopwatchSecond.value.length===1)
     stopwatchSecond.value='0'+ stopwatchSecond.value;
