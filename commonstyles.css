@@ -68,7 +68,12 @@ body{
 .dropdown-nav:hover .dropdown-content{
       display: block;
       position: absolute;
+      
 } 
+
+.dropdown-content a:hover{
+  background-color: #d4d4d4;
+}
 
 .dropdown-nav:hover{
   cursor: pointer;
@@ -115,7 +120,8 @@ body{
 
 #stopwatch-hh,
 #stopwatch-mm,
-#stopwatch-ss{
+#stopwatch-ss,
+#stopwatch-ms{
   height:100px;
   width:100px;
   font-size: 50px;
@@ -212,6 +218,39 @@ body{
     }
 }
 
+@media screen and (max-width: 584px) {
+
+  #stopwatch-hh,
+  #stopwatch-mm,
+  #stopwatch-ss,
+  #stopwatch-ms{
+    height:40px;
+    width:100px;
+    font-size: 30px;
+    
+  }
+  .stopwatch-outputs{
+    font-size: 30px;
+  }
+  
+  }
+
+  @media screen and (max-width: 530px) {
+
+    #stopwatch-hh,
+    #stopwatch-mm,
+    #stopwatch-ss,
+    #stopwatch-ms{
+      height:40px;
+      width:50px;
+      font-size: 25px;
+      
+    }
+    .stopwatch-outputs{
+      font-size: 25px;
+    }
+    
+    }
 
  @media screen and (max-width: 490px) {
   .main-content {
@@ -223,18 +262,7 @@ body{
     }
 }
 
-@media screen and (max-width: 428px) {
-  
 
-#stopwatch-hh,
-#stopwatch-mm,
-#stopwatch-ss{
-  height:50px;
-  width:50px;
-  font-size: 45px;
-}
-
-}
 
 @media screen and (max-width: 380px) {
   h2{
