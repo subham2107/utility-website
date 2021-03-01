@@ -31,6 +31,7 @@ body{
   cursor: pointer;
   border: none;
   font-family: inherit;
+  margin-left: 20px;
   
 }
 
@@ -49,6 +50,10 @@ body{
   
 }
 
+.util{
+  font-size: 30px;
+}
+
 .dropdown-content a {
   display: block;
   text-decoration: none;
@@ -65,15 +70,16 @@ body{
   display: none;
 }
 
+.dropdown-content a:hover{
+  color:#388bfd;
+  background-color: #e7e7e7; 
+}
 .dropdown-nav:hover .dropdown-content{
       display: block;
       position: absolute;
       
 } 
 
-.dropdown-content a:hover{
-  background-color: #d4d4d4;
-}
 
 .dropdown-nav:hover{
   cursor: pointer;
@@ -218,7 +224,7 @@ body{
     }
 }
 
-@media screen and (max-width: 584px) {
+@media screen and (max-width: 400px) {
 
   #stopwatch-hh,
   #stopwatch-mm,
@@ -232,25 +238,32 @@ body{
   .stopwatch-outputs{
     font-size: 30px;
   }
+
+  .util{
+    font-size: 22px;
+  }
   
   }
 
-  @media screen and (max-width: 530px) {
+  @media screen and (max-width: 370px) {
 
     #stopwatch-hh,
     #stopwatch-mm,
     #stopwatch-ss,
     #stopwatch-ms{
       height:40px;
-      width:50px;
+      width: 80px;
       font-size: 25px;
       
     }
     .stopwatch-outputs{
       font-size: 25px;
     }
+  
+    
     
     }
+
 
  @media screen and (max-width: 490px) {
   .main-content {
@@ -260,6 +273,8 @@ body{
   justify-items: center;
   align-items: center;
     }
+
+    
 }
 
 

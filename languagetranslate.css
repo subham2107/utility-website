@@ -32,21 +32,15 @@ border-radius: 3px;
 cursor: pointer;
 border: none;
 font-family: inherit;
+margin-left: 20px;
 
 }
 
-#pause-button {
-background-color: #41b10e;
-color: #fff;
-font-size: 16px;
-line-height: 1.4;
-padding: 10px 30px;
-border-radius: 3px;
-cursor: pointer;
-border: none;
-font-family: inherit;
-
+.util{
+  font-size: 30px;
 }
+
+
 
 .dropdown-content a {
 display: block;
@@ -64,6 +58,11 @@ box-shadow: 1px 2px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 8%);
 display: none;
 }
 
+.dropdown-content a:hover{
+  color:#388bfd;
+  background-color: #e7e7e7; 
+}
+
 .dropdown-nav:hover .dropdown-content{
     display: block;
     position: absolute;
@@ -74,15 +73,7 @@ cursor: pointer;
 color:#388bfd;
 }
 
-.other-websites a {
-color:rgb(77, 80, 83);
-text-decoration: none;
-}
 
-.other-websites a:hover{
-color:#388bfd;
-text-decoration:underline;
-}
 
 .navbar {
 /*added flex wrap..change in all*/
@@ -111,6 +102,11 @@ min-height: calc(100vh - 150px);
 .dropdown-arrow{
 height: 10px;
 width: 10px
+}
+
+textarea{
+  padding: 10px;
+  border-radius: 5px;
 }
 
 
@@ -144,114 +140,34 @@ a{
 }
 
 
-@media screen and (max-width: 925px){
-
-textarea{
-  height: 100px;
-  width: 300px;
-
-}
-.content-info{
-  margin: auto;
-  max-width: 500px;    
-}
-}
-
-
-
-@media screen and (max-width: 655px) {
-
-textarea{
-  height: 70px;
-  width: 210px;
-
-}
-
-  .content-info{
-    margin: auto;
-    max-width: 400px;    
-  }
-}
 
 @media screen and (max-width: 475px) {
 
-.input-output{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  max-width: 300px;
-  margin: auto;
+  textarea{
+    
+    height: 120px;
+    width: 320px;
+    
 
-}
-
-textarea{
-  margin-left:30px;
-  margin-bottom:10px;
-}
-
-  .content-info{
-    margin: auto;
-    max-width: 300px;    
   }
 
-#encode-button,
-#decode-button,
-#generate-button,
-#convert-button ,
+  .util{
+    font-size: 22px;
+  }
+
+  
+
+
 #reset-button,
 #translate-button{
-    margin-top: 10px;
+    
     padding: 7px ;
-    width: 85px;
+    width: 90px;
   }
 
-  #reset-button{
-    
-    width: 85px;
-  }
+  
 }
 
-
-@media screen and (max-width: 365px) {
-
-.input-output{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  max-width: 300px;
-  margin: auto;
-
-}
-
-textarea{
-  margin-left:30px;
-  margin-bottom:10px;
-
-}
-
-  .content-info{
-    margin: auto;
-    max-width: 300px;    
-  }
-
-#encode-button,
-#decode-button,
-#generate-button,
-#convert-button ,
-#reset-button,
-#translate-button{
-    margin-top: 10px;
-    padding: 2px ;
-    width: 75px;
-  }
-
-  #reset-button{
-    
-    width: 75px;
-  }
-}
 
 
 

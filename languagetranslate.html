@@ -13,8 +13,8 @@
 <body>
   <div class="non-footer">
     <header class="navbar">
-      <div style="font-size: 30px;"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" >Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
-        <div class="dropdown-nav">Other tools <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
+      <div class="util"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" >Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+        <div class="dropdown-nav">Quick tools <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
         <div class="dropdown-content">
           <a href="ip.html" >My IP</a>
           <a href="timer.html" >Timer</a>
@@ -28,13 +28,16 @@
       <div class="input-output">
         
         <div>
-      <textarea style="margin-right: 15px;" type="text" id="input" placeholder="Enter the text."  rows="15" cols="60"></textarea>
-      <textarea type="text" id="output" placeholder="Your results." rows="15" cols="60" readonly></textarea>
+      <textarea  type="text" id="input" placeholder="Enter input"  rows="15" cols="60"></textarea>
+        </div>
+        <div style="margin-top:20px;margin-bottom:20px;">
+          <input type="button" id="translate-button" value= "Translate">
+          <input type="button" id="reset-button" value= "Reset">
+        </div>
+        <div>
+      <textarea type="text" id="output" placeholder="Output" rows="15" cols="60" readonly></textarea>
      </div>
-      <div style="margin-top:20px;">
-      <input type="button" id="translate-button" value= "Translate">
-      <input type="button" id="reset-button" value= "Reset">
-    </div>
+      
       </div>
     </main>
   </div>
