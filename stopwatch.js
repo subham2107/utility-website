@@ -41,7 +41,7 @@ startButton.addEventListener('click',()=>{
     stopwatchMinute.value='0'+ stopwatchMinute.value;
   
     if(stopwatchHour.value.length===1)
-stopwatchHour.value='0'+ stopwatchHour.value;
+    stopwatchHour.value='0'+ stopwatchHour.value;
 
   },1000);
 
@@ -64,4 +64,5 @@ resetButton.addEventListener('click',()=>{
   stopwatchMinute.value='0'+0;
   stopwatchSecond.value='0'+0;
   clearInterval(stopwatchId);
+  time=0;
 });
